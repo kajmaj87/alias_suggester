@@ -3,6 +3,10 @@ Simple python script that generates suggestions for aliases you could use based 
 
 # Usage:
 
+You can check the usage like this:
+
+``$ python3 alias_suggester.py --help``
+
 bash:
 
 ``$ cat .bash_history | python3 alias_suggester.py``
