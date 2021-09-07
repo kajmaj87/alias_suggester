@@ -11,10 +11,11 @@ parser = argparse.ArgumentParser(description='Suggests aliases from bash history
 parser.add_argument('-o', '--min_occurences', type=int, help='Take only history entries which have at least so many occurences in history. Default 3',
                     default=3)
 parser.add_argument('-l', '--max_length', type=int, help='Take only history entries that are no longer than so many characters long. Default 20.', default=20)
+parser.add_argument('-c', '--alias_cost', type=int, help='Assume newly created alias will have this lenght. Default 3', default=3)
 
 args = parser.parse_args()
 
-cost = 4
+cost = parser.alias_cost + 1
 proposals = defaultdict(int)
 occurences = defaultdict(int)
 
