@@ -15,7 +15,7 @@ parser.add_argument('-c', '--alias_cost', type=int, help='Assume newly created a
 
 args = parser.parse_args()
 
-cost = parser.alias_cost + 1
+cost = args.alias_cost + 1
 proposals = defaultdict(int)
 occurences = defaultdict(int)
 
