@@ -3,7 +3,7 @@ Simple python script that generates suggestions for aliases you could use based 
 
 # Usage:
 
-You can check the usage like this:
+You can check various parameters in help like this (but the script has sensible defaults):
 
 ``$ python3 alias_suggester.py --help``
 
