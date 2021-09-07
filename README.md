@@ -16,7 +16,7 @@ zsh:
 ``$ history | awk '{ $1=""; print $0 }' | python3 alias_suggester.py``
 
 Which will generate output similar to this (which clearly shows I'm missing git aliasies in my current setup):
-``
+```
 91  git status
 96  npm run netlify
 104  cargo flamegraph
@@ -29,7 +29,7 @@ Which will generate output similar to this (which clearly shows I'm missing git 
 189  git checkout
 298  cargo
 606  cargo run
-``
+```
 
 Number on the left means how many keystrokes could have been saved if you instead had a 3 letter alias for the command on right (assuming you typed each of the commands in your current history by hand)
 
